@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+       
+        .header {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .nav {
+            overflow: hidden;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .brand-logo {
+            margin: -10px;
+            height: 80px;
+            width: 150px;
+            padding-left: 100px;
+        }
+
+        .nav-bar {
+            margin-top: 30px;
+            /* float: right; */
+            margin-left: 30rem;
+
+        }
+
+        .nav-bar a {
+            margin-right: 5px;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: 200;
+            /* text-align: center; */
+            color: black;
+            font-size: 15px;
+        }
+
+        .nav-bar a:hover {
+            color: #FF0000;
+
+        }
+
+        .nav-bar a.activ {
+            color: #FF0000;
+        }
+
+        .menu {
+            color: #FFFFFF;
+            font-size: 18px;
+            height: 40px;
+            width: 150px;
+            background-color: #FF0000;
+            border-color: #FF0000;
+            border-radius: 30px;
+            margin-top: 14px;
+            margin-right: 100px;
+        }
+
+        .menu img {
+            align-items: center;
+        }
+
+        .body1-back {
+            z-index: -1;
+            position: absolute;
+        }
+
+        .body1 {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .body1-text {
+            font-family: initial;
+            margin-left: 100px;
+            margin-top: 250px;
+        }
+
+        .sushi {
+            display: flex;
+            margin-left: 650px;
+            margin-top: -550px;
+        }
+
+        .body2 {
+            background-color: #FFFDD0;
+            height: 1150px;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        .body2-text {
+            text-align: center;
+            font-family: initial;
+            font-size: 40px;
+            padding-top: 20px;
+        }
+
+        .menu-first-row {
+            margin-left: 70px;
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+
+        }
+
+        .menu-first {
+            margin-bottom: -10px;
+            display: block;
+        }
+
+        .button {
+            font-family: initial;
+            font-size: 30px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border: #FF0000;
+            height: 50px;
+            width: 400px;
+            margin-top: -40px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+
+        .menu-second-row {
+            margin-top: 480px;
+            margin-left: 70px;
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+
+        }
+
+        .menu-second {
+            margin-bottom: -10px;
+            display: block;
+        }
+
+        .body3-back {
+            display: flexbox;
+            z-index: -1;
+            position: absolute;
+            height: 500px;
+            margin-top: -20px;
+        }
+
+        .body3-display {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            font-family: initial;
+        }
+
+        .body3-order-platform {
+            margin-left: 150px;
+            font-family: initial;
+            padding: 0px;
+
+        }
+
+        .body3-order-platform p {
+            color: #FF0000;
+            font-size: 35px;
+            padding: 0px;
+            margin: 5px;
+
+        }
+
+        .order-button {
+            color: #FFFFFF;
+            background-color: #FF0000;
+            border: none;
+            border-radius: 20px;
+            height: 40px;
+            font-size: 20px;
+            padding-top: 0px;
+        }
+
+        .delivery-boy {
+            margin-left: 80px;
+            margin-top: 0%;
+        }
+
+        .online-menu1 {
+            z-index: -1;
+            /* margin-top: -20px; */
+            height: 350px;
+        }
+
+        .online-menu2 {
+            height: 350px;
+            margin-top: 30px;
+            margin-left: -100px;
+        }
+
+        .review {
+            background-color: #FFB81C;
+            height: 550px;
+            margin-top: 480px;
+            font-family: initial;
+            padding-top: 20px;
+
+        }
+
+        .review-box-group {
+            justify-content: space-between;
+            display: flex;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+
+        .review-box {
+            background-color: #FF0000;
+            padding: 10px;
+            width: 400px;
+            height: 200px;
+            margin-left: 10px;
+            border-radius: 15px;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+        .R-shape{
+            justify-content: space-between;
+            display: flex;
+           position: absolute;
+           margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- Header start -->
+    <header class="header container-fluid">
+        <div class="logo">
+            <img src="facebook.logo.jpge.jpg" height="20px" width="20px" alt="404 not found">
+            <img src="insta.logo.jpge.jpg" height="20px" width="20px" alt="404 not found">
+            <img src="twter.logo.jpge.jpg" height="20px" width="20px" alt="404 not found">
+
+        </div>
+        <div class="contact-info">
+            <p>Kalikapur: 9163764444</p>
+            <p>Deshapriya Park: 9163000200</p>
+        </div>
+    </header>
+    <!-- Hearder end -->
+    <nav class="nav container-fluid">
+        <div class="brand-logo">
+            <img src="wasabe.logo.jpg" height="80px" width="150px" alt="404 not found">
+        </div>
+
+        <div class="nav-bar">
+            <a class="activ" href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">EVENT</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <button class="menu">Our Menu <img src="add_to_cart-removebg-preview.png" height="20px" width="20px"></button>
+    </nav>
+    <div class="body1"></div>
+    <img class="body1-back" src="background.jpg" alt="404 not found " height="700px" width="100%">
+    <div class="body1-text">
+        <p style="font-size: 70px; padding: 0%; color:#FFFFFF">Wasabee bring <br> paradise to food <br> lovers </p>
+        <p style=" font-size: 20px; color: #FFD700; font-family: serif;"> With cuisines as good as the dream.</p>
+    </div>
+    <img class="sushi" src="wasabee-pic-1.webp">
+    </div>
+    <div class="body2">
+        <div class="body2-text">
+            <p style="color: #FF0000; font-size: 25px;">Menu</p>
+
+            <p style="color: black;">Just Choose From The Best of Wasabee</p>
+        </div>
+        <div class="menu-first-row">
+            <div class="menu-first">
+                <img src="japanese-food.webp" height="400px" width="400px">
+                <button class="button">Japanese</button>
+            </div>
+            <div class="menu-first">
+                <img src="chinese-food.webp" height="400px" width="400px">
+                <button class="button">Chinese</button>
+            </div>
+            <div class="menu-first">
+                <img src="korean-food.webp" height="400px" width="400px">
+                <button class="button">Korean</button>
+            </div>
+        </div>
+        <div class="menu-second-row">
+            <div class="menu-second">
+                <img src="thai- food.webp" height="400px" width="400px">
+                <button class="button">Thai</button>
+            </div>
+            <div class="menu-second">
+                <img src="pan-food.webp" height="400px" width="400px">
+                <button class="button">Pan Asean</button>
+            </div>
+            <div class="menu-second">
+                <img src="spacel-food.webp" height="400px" width="400px">
+                <button class="button">Wasabee Spacel</button>
+            </div>
+        </div>
+    </div>
+    <div class="body3">
+        <img class="body3-back" src="swggy-zomato-back.avif" height="500px" width="100%">
+        <div class="body3-display">
+            <div class="body3-order-platform">
+                <p style="color: black; margin-top: 50px;"><b>Order Online from Wasabee To <br> Get Delivery</b></p>
+                <p>Deshapriya Park</p>
+                <div style="padding: 0px;">
+                    <button class="order-button" type="button"><img src="call-logo-removebg-preview.png" height="5px"
+                            width="5px">Call
+                        us</button>
+                    <button class="order-button" type="button">Form Zomato</button>
+                    <button class="order-button" type="button">Form Swiggy</button>
+                </div>
+                <p>Kalikapur</p>
+                <div>
+                    <button class="order-button" type="button"><img src="call-logo-removebg-preview.png" height="5px"
+                            width="5px">Call
+                        us</button>
+                    <button class="order-button" type="button">Form Zomato</button>
+                    <button class="order-button" type="button">Form Swiggy</button>
+                </div>
+            </div>
+            <div class="delivery-boy">
+                <img src="food-delivery-man-removebg-preview.png" height="400px" width="400px">
+            </div>
+
+            <img class="online-menu1" src="oniline-menu1.jpeg" style="border-radius: 10px;">
+            <img class="online-menu2" src="oniline-menu2.jpeg" style="border-radius: 10px; margin-top: 30px;">
+
+        </div>
+    </div>
+    <div class="review">
+        <div style="text-align: center; font-size: 25px; margin-bottom: 0%; ">
+        <h3 style="color: #FFFFFF;">Review</h3>
+        <h1>About Wasabee Food</h1>
+    </div>
+        <div class="review-box-group">
+            <div class="review-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet ab, architecto, eos minima,
+                    assumenda
+                    ipsum quas labore .</p>
+                <img src="gratisography-augmented-reality-800x525.jpg" height="50px" width="50px">
+            </div>
+
+            <div class="review-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet ab, architecto, eos minima,
+                    assumenda
+                    ipsum quas labore .</p>
+                <img src="gratisography-augmented-reality-800x525.jpg" height="50px" width="50px">
+            </div>
+
+            <div class="review-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet ab, architecto, eos minima,
+                    assumenda
+                    ipsum quas labore .</p>
+                <img src="gratisography-augmented-reality-800x525.jpg" height="50px" width="50px">
+            </div>
+
+        </div>
+        <div>
+            <div class="R-shape"
+                style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid #FFD700;">
+            </div>
+            <div class="R-shape"
+                style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid #FFD700;">
+            </div>
+            <div class="R-shape"
+                style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid #FFD700;">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
